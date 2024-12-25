@@ -5,7 +5,7 @@ namespace Core
 	{
 		game_window_manager = new GameWindowManager();
 		event_manager = new EventManager();
-		gameplay_manager = new GameplayManager();
+		gameplay_manager = new GameplayManager(event_manager);
 		game_window_manager->initialize();
 	}
 
@@ -21,6 +21,7 @@ namespace Core
 
 	void Core::GameLoop::Update()
 	{
+		gameplay_manager->update();
 	}
 
 	void Core::GameLoop::Render()
