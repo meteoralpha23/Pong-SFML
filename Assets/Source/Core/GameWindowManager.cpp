@@ -30,7 +30,7 @@ void Core::GameWindowManager::render()
 	game_window->display();
 
 }
-RenderWindow* Core::GameWindowManager::getGameWinodw()
+RenderWindow* Core::GameWindowManager::getGameWindow()
 {
 	return game_window;
 }

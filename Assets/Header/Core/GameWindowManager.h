@@ -14,7 +14,7 @@ namespace Core
 		void createGameWindow();
 	public:
 		void initialize();
-		RenderWindow* getGameWinodw();
+		RenderWindow* getGameWindow();
 		bool isGameRunning();
 		void render();
 	};
