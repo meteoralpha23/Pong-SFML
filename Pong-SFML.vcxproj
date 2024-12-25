@@ -134,10 +134,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Assets\Source\Core\GameWindowManager.cpp" />
+    <ClCompile Include="Assets\Source\Event\EventManager.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Assets\Header\Core\GameWindowManager.h" />
+    <ClInclude Include="Assets\Header\Event\EventManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
