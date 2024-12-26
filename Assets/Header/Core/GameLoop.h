@@ -3,7 +3,7 @@
 #include "../../Header/Core/GameWindowManager.h"
 #include "../../Header/Event/EventManager.h"
 #include "../../Header/Gameplay/GameplayManager.h"
-
+#include "D:\Unity Projects 2024\Co-Op Snake 2D\Pong-SFML\Assets\Header\Sound\SoundManager.h"
 using namespace sf;
 using namespace Core;
 using namespace Event;
@@ -18,7 +18,7 @@ namespace Core
 		EventManager* event_manager;
 		GameplayManager* gameplay_manager;
 
-
+		SoundManager* soundmanager;
 
 
 	public:
