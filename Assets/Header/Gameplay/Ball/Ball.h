@@ -2,9 +2,11 @@
 #include<SFML/Graphics.hpp>
 #include "D:\Unity Projects 2024\Co-Op Snake 2D\Pong-SFML\Assets\Header\Gameplay\Paddle\Paddle.h"
 #include "D:\Unity Projects 2024\Co-Op Snake 2D\Pong-SFML\Assets\Header\Utility\TimeService.h"
+#include "D:\Unity Projects 2024\Co-Op Snake 2D\Pong-SFML\Assets\Header\Sound\SoundManager.h"
 #include<iostream>
 using namespace sf;
 using namespace Utility;
+using namespace Sound;
 namespace Gameplay
 {
 	enum class BallState
@@ -49,7 +51,7 @@ namespace Gameplay
 
 		bool had_left_collison = false;
 		bool had_right_collison = false;
-
+		SoundManager* soundmanager;
 	
 	public:
 		Ball();
