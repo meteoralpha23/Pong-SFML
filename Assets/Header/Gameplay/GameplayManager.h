@@ -33,7 +33,8 @@ namespace Gameplay
 		void initialize();
 
 	public:
-		
+		void UpdateScore();
+		void resetPlayers();
 		GameplayManager(EventManager* manager);
 		void update();
 		void render(RenderWindow* game_window);
