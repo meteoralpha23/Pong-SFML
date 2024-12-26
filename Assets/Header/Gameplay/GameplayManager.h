@@ -4,8 +4,10 @@
 #include "../../Header/Event/EventManager.h"
 #include"Boundary/Boundary.h"
 #include "../../Header/Utility/TimeService.h"
+#include "D:\Unity Projects 2024\Co-Op Snake 2D\Pong-SFML\Assets\Header\UI\UIService.h"
 using namespace Event;
 using namespace Utility;
+using namespace UI;
 namespace Gameplay
 {
 	class GameplayManager
@@ -22,7 +24,9 @@ namespace Gameplay
 		Paddle* player2;
 		Boundary* boundary;
 		TimeService* time_service;
-	
+
+		UIService* ui_service = new UIService;
+
 		EventManager* event_manager;
 		
 
