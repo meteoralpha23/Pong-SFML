@@ -6,7 +6,9 @@ namespace UI
 	{
 		loadFontTexture();
 		createLeftScoreText();
+		createRightScoreText();
 	}
+
 	void UI::UIService::loadFontTexture()
 	{
 		font.loadFromFile(texture_path);
@@ -17,14 +19,38 @@ namespace UI
 		left_score_text.setString(initial_string);
 		left_score_text.setCharacterSize(font_size);
 		left_score_text.setFillColor(font_color);
-		left_score_text.setPosition(left_score_position_x, left_score_position_y);
+		left_score_text.setPosition(left_score_postion_x, left_score_postion_y);
+	}
+
+	void UIService::createRightScoreText()
+	{
+		right_score_text.setFont(font);
+		right_score_text.setString(initial_string);
+		right_score_text.setCharacterSize(font_size);
+		right_score_text.setFillColor(font_color);
+		right_score_text.setPosition(right_score_position_x, right_score_position_y);
+	}
+
+	string UIService::formatScore(int score)
+	{
+		return (score < 10 ? "0" : "") + to_string(score);
 	}
 
 
 	void UIService::render(RenderWindow* game_window)
 	{
 		game_window->draw(left_score_text);
+		game_window->draw(right_score_text);
     }
+	void UIService::incrementPlayer1Score()
+	{
+		player1_score++;
+	}
+	void UIService::incrementPlayer2Score()
+	{
+		player2_score++;
+	}
+
 
 
 
