@@ -66,6 +66,9 @@
     <ClCompile Include="Assets\Source\Core\Gameplay\Boundary\Boundary.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Assets\Source\Utility\TimeService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Assets\Header\Core\GameWindowManager.h">
@@ -87,6 +90,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Assets\Header\Gameplay\Boundary\Boundary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Header\Utility\TimeService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
