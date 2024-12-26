@@ -9,7 +9,7 @@ namespace Utility
 		float delta_time;
 		void updateDeltaTimee();
 		float calculateDeltatime();
-		void updatePreiousTime();
+		void updatePreviousTime();
 
 
 	public:
