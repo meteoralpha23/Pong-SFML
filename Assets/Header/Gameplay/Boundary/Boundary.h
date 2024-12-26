@@ -10,30 +10,35 @@ namespace Gameplay
 		RectangleShape topBoundary;
 		RectangleShape leftBoundary;
 		RectangleShape centerLine;
+		RectangleShape rightBoundary;
+		RectangleShape bottomBoundary;
 
 		const float horizontal_boundary_width = 1280.0f;
 		const float horizontal_boundary_height = 20.0f;
 
+		const float top_position_x = 0.0f;
+		const float top_position_y = 0.0f;
+
+		const float bottom_position_x = 0.0f;
+		const float bottom_position_y = 700.0f;
 
 		const float vertical_boundary_width = 20.0f;
 		const float vertical_boundary_height = 720.0f;
 
-		// Top boundary starts at the window's top-left corner
-		const float top_position_x = 0.0f;
-		const float top_position_y = 0.0f;
-
-		// Left boundary also starts at top-left
 		const float left_position_x = 0.0f;
 		const float left_position_y = 0.0f;
 
-		const Color boundary_color = Color::Blue;
-		const Color center_line_color = Color::White;
+		const float right_position_x = 1260.0f;
+		const float right_position_y = 0.0f;
 
-		const float  center_line_width = 10.0f;
+		const float center_line_width = 10.0f;
 		const float center_line_height = 680.0f;
 
 		const float center_line_position_x = 640.0f;
 		const float center_line_position_y = 20.0f;
+
+		const Color boundary_color = Color::Blue;
+		const Color center_line_color = Color::White;
 
 		void createTopBoundary();
 		void createBottomBoundary();
